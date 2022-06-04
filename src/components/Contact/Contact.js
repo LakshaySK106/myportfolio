@@ -7,6 +7,7 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './Contact.scss'
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 function Contact() {
    const [letterClass, setLetterClass] = useState('text-animate')
@@ -105,12 +106,15 @@ function Contact() {
                   </span>
                </div>
                <div className="map-wrap">
-                  <MapContainer center={[28.7495, 77.1184]} zoom={15}>
+                  <MapContainer center={[28.7495, 77.1184]} zoom={14.2}>
                      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                      <Marker position={[28.7495, 77.1184]}>
                         <Popup>Lakshay lives here, come over for a cup of coffee</Popup>
                      </Marker>
                   </MapContainer>
+               </div>
+               <div>
+
                </div>
             </div>
 
@@ -121,8 +125,6 @@ function Contact() {
                <span className="bottom-tag-html">&lt;/html&gt;</span>
             </span>
          </div>
-
-
       </>
    )
 }

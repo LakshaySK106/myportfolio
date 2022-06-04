@@ -217,8 +217,12 @@
       background: 0 0;
       float: right;
       text-align: center;
+   }
 
-
+   .flat-button:hover{
+      cursor: pointer;
+      color: #181818;
+      background: #4e4a85;
    }
 }
 
@@ -262,5 +266,15 @@
       span {
          color: white;
       }
+   }
+}
+
+:root {
+   --map-tiles-filter: brightness(0.625) invert(1) contrast(3) hue-rotate(200deg) saturate(0.4) brightness(0.6);
+}
+
+@media (prefers-color-scheme: dark) {
+   .map-wrap {
+      filter: var(--map-tiles-filter, none);
    }
 }

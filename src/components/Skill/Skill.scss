@@ -1,0 +1,143 @@
+.page {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+
+.top-tags {
+   bottom: auto;
+   top: 40px;
+}
+
+.top-html {
+   bottom: auto;
+   top: 22px;
+   margin-left: -20px;
+}
+
+.tags {
+   color: #4e4a85;
+   opacity: 0.6;
+   position: absolute;
+   bottom: 0;
+   left: 150px;
+   font-size: 18px;
+   font-family: 'La Belle Aurore', cursive;
+}
+
+.bottom-tag-html {
+   margin-left: -20px;
+}
+
+.container.skill-page {
+   .text-zone {
+      position: absolute;
+      left: 12.4vw;
+      top: 50vh;
+      transform: translateY(-50%);
+      width: 35%;
+      // vertical-align: middle;
+      // display: table-cell;
+      max-height: 90vh;
+
+      h1 {
+         font-size: 65px;
+         font-family: 'Coolvetica';
+         color: #4e4a85;
+         left: 15%;
+         line-height: 49px;
+         font-weight: 400;
+         margin-top: 0;
+         position: relative;
+         margin-bottom: 25px;
+         left: -10px;
+
+         &:before {
+            content: '<h2>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 18px;
+            position: absolute;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 20px;
+            bottom: 93px;
+         }
+
+         &:after {
+            content: '<h2/>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -23px;
+            margin-left: 20px;
+            opacity: 0.6;
+         }
+      }
+
+      p {
+         font-size: 13px;
+         color: #fff;
+         font-family: sans-serif;
+         max-width: fit-content;
+         animation: pulse 1s;
+         margin-top: 37px;
+
+         &:before {
+            content: '<p>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -16px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+         }
+
+         &:after {
+            content: '<p/>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -10px;
+            margin-left: 20px;
+            opacity: 0.6;
+         }
+
+         &:nth-of-type(1) {
+            animation-delay: 1.1s;
+         }
+      }
+   }
+
+   .text-animate-hover {
+      &:hover {
+         color: #fff;
+      }
+   }
+}
+
+
+
+
+
+.tagcloud {
+   display: inline-block;
+   top: 100px;
+   left: 32%;
+   font-weight: bold;
+   letter-spacing: 1px;
+   font-family: 'Coolvetica', cursive;
+   font-size: 20px;
+}
+
+.tagcloud--item:hover {
+   color: #4e4a85;
+}

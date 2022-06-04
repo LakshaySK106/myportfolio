@@ -1,0 +1,106 @@
+.home-page {
+   .text-zone {
+      position: absolute;
+      // left: 15%;
+      left: 13vw;
+      right: 40vw;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      max-height: 90%;
+   }
+
+   h1 {
+      color: #fff;
+      font-size: 82px;
+      line-height: 68px;
+      margin: 0;
+      font-family: 'Coolvetica';
+      font-weight: 400;
+
+      &:before {
+         content: '<h1>';
+         font-family: 'La Belle Aurore', cursive;
+         color: #4e4a85;
+         font-size: 18px;
+         position: absolute;
+         margin-top: -40px;
+         left: -15px;
+         opacity: 1;
+      }
+
+      &:after {
+         content: '<h1/>';
+         font-family: 'La Belle Aurore', cursive;
+         color: #4e4a85;
+         font-size: 18px;
+         position: absolute;
+         margin-top: 25px;
+         margin-left: 15px;
+         opacity: 1;
+      }
+
+      img {
+         margin-left: 22px;
+         margin-right: 4px;
+         opacity: 0;
+         width: 45px;
+         height: auto;
+         animation: rotateIn 1s linear both;
+         animation-delay: 1.4s;
+      }
+   }
+
+   h2 {
+      color: #8d8d8d;
+      margin-top: 30px;
+      font-weight: 400;
+      font-size: 13px;
+      font-family: sans-serif;
+      letter-spacing: 3px;
+      animation: fadeIn 1s 1.8s backwards;
+
+      &:before {
+         content: '<p>';
+         font-family: 'La Belle Aurore', cursive;
+         color: #4e4a85;
+         font-size: 18px;
+         position: absolute;
+         margin-top: -22px;
+         left: -10px;
+         opacity: 0.6;
+      }
+
+      &:after {
+         content: '<p/>';
+         font-family: 'La Belle Aurore', cursive;
+         color: #4e4a85;
+         font-size: 18px;
+         position: absolute;
+         left: -30px;
+         margin-left: 20px;
+         margin-top: 16px;
+         opacity: 0.6;
+      }
+   }
+
+   .flat-button {
+      color: #4e4a85;
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: 4px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 12px 20px;
+      border: 1px solid #4e4a85;
+      margin-top: 35px;
+      float: left;
+      animation: fadeIn 1s 1.8s backwards;
+      white-space: nowrap;
+
+      &:hover {
+         color: #181818;
+         background: #4e4a85;
+      }
+   }
+}

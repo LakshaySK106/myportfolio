@@ -1,0 +1,266 @@
+.page {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+
+.top-tags {
+   bottom: auto;
+   top: 40px;
+}
+
+.top-html {
+   bottom: auto;
+   top: 22px;
+   margin-left: -20px;
+}
+
+.tags {
+   color: #4e4a85;
+   opacity: 0.6;
+   position: absolute;
+   bottom: 0;
+   left: 150px;
+   font-size: 18px;
+   font-family: 'La Belle Aurore', cursive;
+}
+
+.bottom-tag-html {
+   margin-left: -20px;
+}
+
+.container.contact-page {
+   .text-zone {
+      position: absolute;
+      left: 13%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 35%;
+      vertical-align: middle;
+      display: table-cell;
+      max-height: 90%;
+
+      h1 {
+         font-size: 57px;
+         font-family: 'Coolvetica';
+         color: #4e4a85;
+         font-weight: 400;
+         margin-top: 0;
+         position: relative;
+         margin-bottom: 25px;
+         left: -10px;
+
+         &:before {
+            content: '<h2>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 18px;
+            position: absolute;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+         }
+
+         &:after {
+            content: '<h2/>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -6px;
+            margin-left: 20px;
+            opacity: 0.6;
+         }
+      }
+
+      p {
+         font-size: 12px;
+         color: white;
+         font-family: sans-serif;
+         max-width: fit-content;
+         animation: pulse 1s;
+
+         &:before {
+            content: '<p>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 15px;
+            position: absolute;
+            margin-top: -16px;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+         }
+
+         &:after {
+            content: '<p/>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 15px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            margin-top: 18px;
+            // bottom: -15px;
+            margin-left: 20px;
+            opacity: 0.6;
+         }
+
+         &:nth-of-type(1) {
+            animation-delay: 1s;
+         }
+      }
+
+   }
+
+   .text-animate-hover {
+      &:hover {
+         color: #4e4a85;
+      }
+   }
+}
+
+.contact-form {
+   width: 100%;
+   margin-top: 40px;
+
+   form {
+      &:before {
+         content: '<form>';
+         font-family: 'La Belle Aurore', cursive;
+         color: #4e4a85;
+         font-size: 15px;
+         position: absolute;
+         margin-top: -16px;
+         left: -10px;
+         opacity: 0.6;
+         line-height: 18px;
+      }
+
+      &:after {
+         content: '<form/>';
+         font-family: 'La Belle Aurore', cursive;
+         color: #4e4a85;
+         font-size: 15px;
+         line-height: 18px;
+         position: absolute;
+         left: -30px;
+         bottom: -15px;
+         margin-left: 20px;
+         opacity: 0.6;
+      }
+   }
+
+   .ok {
+      padding: 0;
+      margin: 0;
+
+      li {
+         padding: 0;
+         margin: 0;
+         list-style: none;
+         margin-bottom: 5px;
+         opacity: 0;
+         overflow: hidden;
+         display: block;
+         clear: both;
+         position: relative;
+         animation: fadeInUp 1s 1s;
+         animation-fill-mode: forwards;
+      }
+
+      li.half {
+         width: 49.5%;
+         margin-left: 1%;
+         float: left;
+         clear: none;
+
+         &:first-child {
+            margin-left: 0;
+         }
+      }
+   }
+
+   input[type='text'],
+   input[type='email'] {
+      width: 100%;
+      border: 0;
+      background: #4e4a85;
+      height: 37px;
+      font-size: 13px;
+      color: #181818;
+      padding: 0 20px;
+      box-sizing: border-box;
+   }
+
+   textarea {
+      width: 100%;
+      border: 0;
+      background: #4e4a85;
+      height: 50px;
+      font-size: 13px;
+      color: #181818;
+      padding: 20px;
+      box-sizing: border-box;
+      min-height: 120px;
+   }
+
+   .flat-button {
+      color: #4e4a85;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-decoration: none;
+      padding: 8px 10px;
+      border: 1px solid #4e4a85;
+      background: 0 0;
+      float: right;
+      text-align: center;
+
+
+   }
+}
+
+.map-wrap {
+   background: #181818;
+   float: right;
+   width: 50vw;
+   height: 100vh;
+   margin-top: -3%;
+}
+
+.leaflet-container {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   opacity: 0;
+   animation: backInRight 1.3s;
+   animation-fill-mode: forwards;
+}
+
+.info-map {
+   position: absolute;
+   background: #181818;
+   top: 1px;
+   right: 37vw;
+   left: 53.2vw;
+   z-index: 999999;
+   width: 160px;
+   padding: 10px;
+   color: white;
+   font-family: "Helvetica";
+   font-size: 11px;
+   opacity: 0;
+   animation: fadeIn 1s 1.5s;
+   animation-fill-mode: forwards;
+
+   span {
+      font-size: 11px;
+      color: #4e4a85;
+
+      span {
+         color: white;
+      }
+   }
+}

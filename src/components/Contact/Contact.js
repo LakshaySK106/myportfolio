@@ -105,9 +105,9 @@ function Contact() {
                   </span>
                </div>
                <div className="map-wrap">
-                  <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+                  <MapContainer center={[28.7495, 77.1184]} zoom={15}>
                      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                     <Marker position={[44.96366, 19.61045]}>
+                     <Marker position={[28.7495, 77.1184]}>
                         <Popup>Lakshay lives here, come over for a cup of coffee</Popup>
                      </Marker>
                   </MapContainer>

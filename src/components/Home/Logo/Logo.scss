@@ -1,8 +1,8 @@
 .logo-container {
    z-index: 0;
-   width: 400px;
+   width: 300px;
    height: 609px;
-   opacity: 0;
+   opacity: 1;
    position: relative;
    top: 21vh;
    right: 15vw;
@@ -18,8 +18,8 @@
       left: 6vw;
       margin: auto;
       width: 30vw;
-      opacity: 0;
+      opacity: 1;
       transform: rotateZ(9deg) !important;
-      z-index: 1;
+      animation: fadeIn 1.3s 1.7s backwards;
    }
 }

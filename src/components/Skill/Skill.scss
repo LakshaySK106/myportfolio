@@ -41,7 +41,7 @@
       max-height: 90vh;
 
       h1 {
-         font-size: 65px;
+         font-size: 70px;
          font-family: 'Coolvetica';
          color: #4e4a85;
          left: 15%;
@@ -79,7 +79,7 @@
       }
 
       p {
-         font-size: 13px;
+         font-size: 14px;
          color: #fff;
          font-family: sans-serif;
          max-width: fit-content;
@@ -104,10 +104,10 @@
             color: #4e4a85;
             font-size: 18px;
             line-height: 18px;
-            position: absolute;
-            left: -30px;
-            bottom: -10px;
-            margin-left: 20px;
+            position: relative;
+            display: block;
+            left: -11px;
+            bottom: -3px;
             opacity: 0.6;
          }
 

@@ -33,10 +33,16 @@ function About() {
                      idx={15}
                   />
                </h1>
-               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod, dolores, sequi quia maxime, amet voluptatum excepturi cumque ut mollitia commodi ea enim dolorum asperiores adipisci obcaecati ipsum vitae veritatis nihil ab iure suscipit blanditiis corrupti!
+               <p>I'm a Full Stack Web Developer, Competitive Programmer and an undergrad at Delhi Technological University located in New Delhi, India. I've a serious passion for problem solving, UI effects, animations and creating intuitive, dynamic user experiences.
                   <br />
                   <br />
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima illum officiis mollitia dolor!
+                  Well-organised, self-motivated and creative person with high attention to detail. Travel freak, fan of English lit, FSOG and FSD soundtracks, and love various physical pursuits against the run of play with excercise control in all things.
+                  <br />
+                  <br />
+                  Interested in open code contributions and working on ambitious projects with positive people.
+                  <Link to="/contact" className='reach'>
+                  Reach out to me!
+                  </Link>
                </p>
                <div className="myCv">
                      <div className='rtext'>My Resume</div>

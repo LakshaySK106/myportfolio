@@ -43,7 +43,7 @@
       max-height: 90%;
 
       h1 {
-         font-size: 65px;
+         font-size: 70px;
          font-family: 'Coolvetica';
          color: #4e4a85;
          font-weight: 400;
@@ -79,7 +79,7 @@
       }
 
       p {
-         font-size: 13px;
+         font-size: 14px;
          color: #fff;
          font-family: sans-serif;
          max-width: fit-content;
@@ -107,6 +107,7 @@
             left: -11px;
             display: block;
             opacity: 0.6;
+            bottom: -3px;
          }
 
          &:nth-of-type(1) {
@@ -171,6 +172,15 @@
    }
 }
 
+.reach{
+   text-decoration: none;
+   color: #4e4a85;
+   display: block;
+   margin-top: 5px;
+   &:hover{
+      color: white;
+   }
+}
 
 .okay {
    text-decoration: none;
@@ -179,6 +189,7 @@
    margin-top: 8vh;
    position: relative;
    width: 80%;
+   color: #4e4a85;
    text-align: center;
    margin-left: auto;
    margin-right: auto;

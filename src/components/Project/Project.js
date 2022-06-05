@@ -45,7 +45,7 @@ function Project() {
                 idx={15}
               />
             </h1>
-            <p>Being a Sophomore with Computer Science in major I've worked on multiple projects during my course based out of development / Web Applications / Frontend / Backend. This is a fresh selection of my latest projects!
+            <p>Being a Sophomore with Computer Science in major, I've worked on multiple projects during my course based out of development / Web Applications / Frontend / Backend. This is a fresh selection of my latest projects!
               <br />
               <br />
               <a href='https://github.com/LakshaySK106' target="_blank" className="qView">Wanna take a quick view?</a>

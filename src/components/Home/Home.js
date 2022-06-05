@@ -55,6 +55,10 @@ function Home() {
          </div>
       </div>
       <Logo/>
+         {/* <div className="namm">
+            <div class="alpha" id="alpha1">L</div>
+            <div class="aplha" id="alpha2">L</div>
+         </div> */}
       </>
    )
 }

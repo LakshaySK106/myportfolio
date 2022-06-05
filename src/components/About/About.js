@@ -3,7 +3,6 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './About.scss'
 import { Outlet, Link } from 'react-router-dom'
-import pdf from '../../assets/resume/lk_r.pdf'
 
 function About() {
 
@@ -41,7 +40,7 @@ function About() {
                </p>
                <div className="myCv">
                      <div className='rtext'>My Resume</div>
-                     <div className='okay'><a href={pdf} target="__blank">CLICK HERE TO VIEW PDF</a></div>
+                  <div className='okay'><a href="https://drive.google.com/file/d/1DSiOsbxgFbp8aQzw_JuYmNYrnzZCFsgC/view?usp=sharing" target="__blank">CLICK HERE TO VIEW PDF</a></div>
                </div>
             </div>
             

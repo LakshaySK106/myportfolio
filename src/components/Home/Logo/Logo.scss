@@ -9,12 +9,6 @@
    bottom: 0;
    left: 14vw;
    margin: auto;
-   svg {
-      width: 100%;
-      height: auto;
-      bottom: 0;
-      transform: rotateZ(9deg) !important;
-   }
 
    .solid-logo {
       position: relative;
@@ -28,9 +22,4 @@
       transform: rotateZ(9deg) !important;
       z-index: 1;
    }
-}
-
-.svg-container {
-   stroke: #4e4a85;
-   stroke-width: 10;
 }

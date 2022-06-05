@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom'
 import React from 'react'
 import { useEffect, useState } from 'react'
-import Loader from 'react-loaders'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
@@ -107,7 +106,7 @@ function Contact() {
                <div className="map-wrap">
                   <MapContainer center={[28.7495, 77.1184]} zoom={14.2}>
                      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                     <Marker position={[28.7495, 77.1184]}>
+                     <Marker position={[28.7495, 77.1184]} >
                         <Popup>Lakshay lives here, come over for a cup of coffee</Popup>
                      </Marker>
                   </MapContainer>

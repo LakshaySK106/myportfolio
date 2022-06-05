@@ -4,15 +4,10 @@ import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './About.scss'
 import { Outlet, Link } from 'react-router-dom'
 import pdf from '../../assets/resume/lk_r.pdf'
-import { saveAs } from "file-saver";
 
 function About() {
 
    const [letterClass, setLetterClass] = useState('text-animate')
-
-   
-
-   // export default function App() 
 
    useEffect(() => {
       setTimeout(() => {

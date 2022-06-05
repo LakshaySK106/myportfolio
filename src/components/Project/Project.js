@@ -3,21 +3,21 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './Project.scss'
 import { Outlet } from 'react-router-dom'
-import huluH from '../../assets/project/hulu-H.png'
-import huluC from '../../assets/project/hulu-C.png'
-import huluM from '../../assets/project/hulu-M.png'
-import huluMM from '../../assets/project/hulu-MM.png'
-import hulu1 from '../../assets/project/hulu-1.png'
-import hulu2 from '../../assets/project/hulu-2.png'
-import hulu3 from '../../assets/project/hulu-3.png'
+// import huluH from '../../assets/project/hulu-H.png'
+// import huluC from '../../assets/project/hulu-C.png'
+// import huluM from '../../assets/project/hulu-M.png'
+// import huluMM from '../../assets/project/hulu-MM.png'
+// import hulu1 from '../../assets/project/hulu-1.png'
+// import hulu2 from '../../assets/project/hulu-2.png'
+// import hulu3 from '../../assets/project/hulu-3.png'
 import hulu4 from '../../assets/project/hulu-4.png'
-import spA from '../../assets/project/spotify-All.png'
-import spF from '../../assets/project/spotify-F.png'
+// import spA from '../../assets/project/spotify-All.png'
+// import spF from '../../assets/project/spotify-F.png'
 import spFF from '../../assets/project/spotify-FF.png'
 import pfC from '../../assets/project/pf-C.png'
-import pfH from '../../assets/project/pf-H.png'
-import dClock from '../../assets/project/dc.png'
-import dClock1 from '../../assets/project/dc1.png'
+// import pfH from '../../assets/project/pf-H.png'
+// import dClock from '../../assets/project/dc.png'
+// import dClock1 from '../../assets/project/dc1.png'
 import dClock2 from '../../assets/project/dc2.png'
 
 
@@ -48,21 +48,21 @@ function Project() {
             <p>Being a Sophomore with Computer Science in major, I've worked on multiple projects during my course based out of development / Web Applications / Frontend / Backend. This is a fresh selection of my latest projects!
               <br />
               <br />
-              <a href='https://github.com/LakshaySK106' target="_blank" className="qView">Wanna take a quick view?</a>
+              <a href='https://github.com/LakshaySK106' target="_blank" rel='noreferrer' className="qView">Wanna take a quick view?</a>
             </p>
           </div>
           <div id="home-magicwall" class="fake-magicwall">
 
             <div className="magic-wall_item">
               <a href="https://silly-centaur-b68c5f.netlify.app/" target="_blank" rel="noreferrer">
-                <img src={hulu4} alt="image" />
+                <img src={hulu4} alt="okimage" />
               </a>
             </div>
 
 
             <div className="magic-wall_item">
               <a href="https://spotify-now-playing-gold-seven.vercel.app/api/now-playing" target="_blank" rel="noreferrer">
-                <img src={spFF} alt="image" />
+                <img src={spFF} alt="okimage" />
               </a>
             </div>
 
@@ -70,7 +70,7 @@ function Project() {
 
             <div className="magic-wall_item">
               <a href="https://github.com/LakshaySK106/myportfolio" target="_blank" rel="noreferrer">
-                <img src={pfC} alt="image" />
+                <img src={pfC} alt="okimage" />
               </a>
             </div>
 
@@ -78,7 +78,7 @@ function Project() {
 
             <div className="magic-wall_item">
               <a href="https://lakshaysk106.github.io/Digital-Clock/" target="_blank" rel="noreferrer">
-                <img src={dClock2} alt="image" />
+                <img src={dClock2} alt="okimage" />
               </a>
             </div>
 

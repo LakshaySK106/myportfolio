@@ -3,13 +3,9 @@ import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './Skill.scss'
 import { Outlet } from 'react-router-dom'
-import { TagCloud } from 'react-tagcloud'
 
 function Skill() {
    const [letterClass, setLetterClass] = useState('text-animate')
-
-
-   
 
    useEffect(() => {
       setTimeout(() => {

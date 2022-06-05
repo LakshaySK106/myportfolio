@@ -117,14 +117,6 @@
          &:nth-of-type(1) {
             animation-delay: 1.1s;
          }
-
-         // &:nth-of-type(2) {
-         //    animation-delay: 1.2s;
-         // }
-
-         // &:nth-of-type(3) {
-         //    animation-delay: 1.3s;
-         // }
       }
    }
 
@@ -151,17 +143,6 @@
    row-gap: 0px;
    column-gap: 0px;
    overflow: hidden;
-   // width: 20px;
-   // height: 60px;
-   // // display: grid;
-   // // width: 240px;
-   // position: relative;
-   // // display: list-item;
-   // padding: 0;
-   // margin: 0;
-   // list-style: none;
-   // opacity: 1;
-   // // clear: both;
 
 }
 
@@ -199,23 +180,3 @@
    }
    font-size: 13px;
 }
-
-// .colorbox {
-//    display: block;
-//    position: relative;
-//    top: 0;
-//    left: 0;
-//    width: 100%;
-//    height: 100%;
-//    // background: url(../images/circle.png) no-repeat center;
-//    opacity: 0;
-//    transition: all 150ms ease-out;
-//    -o-transition: all 150ms ease-out;
-//    -webkit-transition: all 150ms ease-out;
-//    transform: scale(0.2);
-// }
-
-// .fake-magicwall li:hover a.colorbox {
-//    transform: scale(0.6);
-//    opacity: 1;
-// }

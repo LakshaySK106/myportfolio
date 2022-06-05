@@ -2,7 +2,6 @@ import React from 'react'
 import logoName from '../../assets/images/logo-LL.png'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import Logo from './Logo/Logo'
 import './Home.scss'
@@ -55,10 +54,6 @@ function Home() {
          </div>
       </div>
       <Logo/>
-         {/* <div className="namm">
-            <div class="alpha" id="alpha1">L</div>
-            <div class="aplha" id="alpha2">L</div>
-         </div> */}
       </>
    )
 }

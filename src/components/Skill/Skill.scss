@@ -36,8 +36,6 @@
       top: 50vh;
       transform: translateY(-60%);
       width: 35%;
-      // vertical-align: middle;
-      // display: table-cell;
       max-height: 90vh;
 
       h1 {
@@ -123,57 +121,3 @@
       }
    }
 }
-
-
-
-
-
-// .tagcloud {
-//    display: inline-block;
-//    top: 100px;
-//    left: 32%;
-//    font-weight: bold;
-//    letter-spacing: 1px;
-//    font-family: 'Coolvetica', cursive;
-//    font-size: 20px;
-// }
-
-// .tagcloud--item:hover {
-//    color: #4e4a85;
-// }
-
-
-
- .skills-charts {
-    position: absolute;
-    width: 80%;
-    right: -15%;
-    left: auto;
-    height: 100%;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 2
- }
-
- #myCanvasContainer {
-    position: relative;
-    height: 100%;
-    width: 100%
- }
-
- #myCanvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: auto;
-    height: 100%
- }
-
- #myCanvasContainer li a {
-    font-size: 30px;
-    font-family: font-file-82132
- }

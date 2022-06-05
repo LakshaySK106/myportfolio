@@ -2,10 +2,17 @@ import React from 'react'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './About.scss'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
+import pdf from '../../assets/resume/lk_r.pdf'
+import { saveAs } from "file-saver";
 
 function About() {
+
    const [letterClass, setLetterClass] = useState('text-animate')
+
+   
+
+   // export default function App() 
 
    useEffect(() => {
       setTimeout(() => {
@@ -31,7 +38,12 @@ function About() {
                   <br />
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima illum officiis mollitia dolor!
                </p>
+               <div className="myCv">
+                     <div className='rtext'>My Resume</div>
+                     <div className='okay'><a href={pdf} target="__blank">CLICK HERE TO VIEW PDF</a></div>
+               </div>
             </div>
+            
             <Outlet />
             <span className="tags bottom-tags">
                &lt;/body&gt;

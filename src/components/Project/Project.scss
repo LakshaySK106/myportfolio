@@ -1,0 +1,221 @@
+.page {
+   width: 100vw;
+   height: 100vh;
+   position: absolute;
+}
+
+.top-tags {
+   bottom: auto;
+   top: 40px;
+   margin-left: 10px;
+}
+
+.top-html {
+   bottom: auto;
+   top: 22px;
+   margin-left: 0px;
+}
+
+.tags {
+   color: #4e4a85;
+   opacity: 0.6;
+   position: absolute;
+   // bottom: 0;
+   left: 110px;
+   font-size: 18px;
+   font-family: 'La Belle Aurore', cursive;
+}
+
+.bottom-tags {
+   margin-left: 20px;
+   bottom: 50px;
+}
+.bottom-tag-html {
+   margin-left: -18px;
+}
+
+.container.project-page {
+   .text-zone {
+      position: absolute;
+      // left: 15%;
+      left: 14vw;
+      right: 40vw;
+      top: 50vh;
+      transform: translateY(-60%);
+      width: 30vw;
+      vertical-align: middle;
+      display: table-cell;
+      max-height: 80vh;
+      h1 {
+         font-size: 65px;
+         font-family: 'Coolvetica';
+         color: #4e4a85;
+         font-weight: 400;
+         width: 65vw;
+         margin-top: 0;
+         position: relative;
+         margin-bottom: 30px;
+         left: -10px;
+
+         &:before {
+            content: '<h2>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 17px;
+            position: absolute;
+            left: -10px;
+            opacity: 0.6;
+            line-height: 18px;
+            margin-top: 9px;
+         }
+
+         &:after {
+            content: '<h2/>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 18px;
+            line-height: 18px;
+            position: absolute;
+            left: -30px;
+            bottom: -2px;
+            margin-left: 20px;
+            opacity: 0.6;
+         }
+      }
+
+      p {
+         font-size: 13px;
+         color: #fff;
+         font-family: sans-serif;
+         max-width: fit-content;
+         animation: pulse 1s;
+         opacity: 0.9;
+
+         &:before {
+            content: '<p>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -18px;
+            left: -10px;
+            opacity: 0.6;
+         }
+
+         &:after {
+            content: '<p/>';
+            font-family: 'La Belle Aurore', cursive;
+            color: #4e4a85;
+            font-size: 18px;
+            display: block;
+            position: relative;
+            left: -12px;
+            bottom: 5px;
+            opacity: 0.6;
+         }
+
+         &:nth-of-type(1) {
+            animation-delay: 1.1s;
+         }
+
+         // &:nth-of-type(2) {
+         //    animation-delay: 1.2s;
+         // }
+
+         // &:nth-of-type(3) {
+         //    animation-delay: 1.3s;
+         // }
+      }
+   }
+
+   .text-animate-hover {
+      &:hover {
+         color: #fff;
+      }
+   }
+}
+
+
+
+
+
+.fake-magicwall {
+   background: #181818;
+   float: right;
+   width: 45vw;
+   height: 100vh;
+   margin-top: -2.4%;
+   display: grid;
+   grid-template-rows: repeat(2, 1fr);
+   grid-template-columns: repeat(2, 1fr);
+   row-gap: 0px;
+   column-gap: 0px;
+   overflow: hidden;
+   // width: 20px;
+   // height: 60px;
+   // // display: grid;
+   // // width: 240px;
+   // position: relative;
+   // // display: list-item;
+   // padding: 0;
+   // margin: 0;
+   // list-style: none;
+   // opacity: 1;
+   // // clear: both;
+
+}
+
+.magic-wall_item {
+   position: relative;
+   opacity: 0.6;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   transition: transform 0.5s, opacity 0.5s;
+   transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
+}
+
+.fake-magicwall img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.magic-wall_item:hover {
+   transform: scale(1.14);
+   -ms-transform: scale(1.4);
+   -webkit-transform: scale(1.14);
+   cursor: pointer;
+   opacity: 1;
+}
+
+.qView{
+   color: #4e4a85;
+   text-decoration: none;
+   &:hover{
+      color: #fff;
+      cursor: pointer;
+   }
+   font-size: 13px;
+}
+
+// .colorbox {
+//    display: block;
+//    position: relative;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    // background: url(../images/circle.png) no-repeat center;
+//    opacity: 0;
+//    transition: all 150ms ease-out;
+//    -o-transition: all 150ms ease-out;
+//    -webkit-transition: all 150ms ease-out;
+//    transform: scale(0.2);
+// }
+
+// .fake-magicwall li:hover a.colorbox {
+//    transform: scale(0.6);
+//    opacity: 1;
+// }

@@ -7,7 +7,6 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './Contact.scss'
-import 'mapbox-gl/dist/mapbox-gl.css';
 
 function Contact() {
    const [letterClass, setLetterClass] = useState('text-animate')
@@ -59,7 +58,7 @@ function Contact() {
                   </p>
                   <div className="contact-form">
                      <form ref={form} onSubmit={sendEmail}>
-                           <div className="ok">
+                        <div className="ok">
                            <li className="half">
                               <input placeholder="Name" type="text" name="name" required />
                            </li>
@@ -89,7 +88,7 @@ function Contact() {
                            <li>
                               <input type="submit" className="flat-button" value="SEND MESSAGE!" />
                            </li>
-                           </div>
+                        </div>
                      </form>
                   </div>
                </div>
@@ -102,7 +101,7 @@ function Contact() {
                   <br />
                   <span>
                      @:
-                  <span> englakshaysk@gmail.com</span>
+                     <span> englakshaysk@gmail.com</span>
                   </span>
                </div>
                <div className="map-wrap">
@@ -112,9 +111,6 @@ function Contact() {
                         <Popup>Lakshay lives here, come over for a cup of coffee</Popup>
                      </Marker>
                   </MapContainer>
-               </div>
-               <div>
-
                </div>
             </div>
 

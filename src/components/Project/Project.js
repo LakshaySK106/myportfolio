@@ -14,7 +14,8 @@ import hulu4 from '../../assets/project/hulu-4.png'
 // import spA from '../../assets/project/spotify-All.png'
 // import spF from '../../assets/project/spotify-F.png'
 import spFF from '../../assets/project/spotify-FF.png'
-import pfC from '../../assets/project/pf-C.png'
+// import pfC from '../../assets/project/pf-C.png'
+import pfC from '../../assets/project/HomePage.png'
 // import pfH from '../../assets/project/pf-H.png'
 // import dClock from '../../assets/project/dc.png'
 // import dClock1 from '../../assets/project/dc1.png'
@@ -54,7 +55,7 @@ function Project() {
           <div id="home-magicwall" class="fake-magicwall">
 
             <div className="magic-wall_item">
-              <a href="https://silly-centaur-b68c5f.netlify.app/" target="_blank" rel="noreferrer">
+              <a href="https://huloo-clone.netlify.app/" target="_blank" rel="noreferrer">
                 <img src={hulu4} alt="okimage" />
               </a>
             </div>
@@ -69,7 +70,7 @@ function Project() {
 
 
             <div className="magic-wall_item">
-              <a href="https://github.com/LakshaySK106/myportfolio" target="_blank" rel="noreferrer">
+              <a href="https://codes-anywhere.herokuapp.com/" target="_blank" rel="noreferrer">
                 <img src={pfC} alt="okimage" />
               </a>
             </div>

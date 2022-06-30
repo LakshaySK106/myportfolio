@@ -15,11 +15,12 @@ import hulu4 from '../../assets/project/hulu-4.png'
 // import spF from '../../assets/project/spotify-F.png'
 import spFF from '../../assets/project/spotify-FF.png'
 // import pfC from '../../assets/project/pf-C.png'
-import pfC from '../../assets/project/HomePage.png'
+import pfC from '../../assets/project/ca.png'
 // import pfH from '../../assets/project/pf-H.png'
 // import dClock from '../../assets/project/dc.png'
 // import dClock1 from '../../assets/project/dc1.png'
-import dClock2 from '../../assets/project/dc2.png'
+// import dClock2 from '../../assets/project/dc2.png'
+import bwe from '../../assets/project/bwe.png'
 
 
 function Project() {
@@ -78,8 +79,8 @@ function Project() {
 
 
             <div className="magic-wall_item">
-              <a href="https://lakshaysk106.github.io/Digital-Clock/" target="_blank" rel="noreferrer">
-                <img src={dClock2} alt="okimage" />
+              <a href="https://github.com/LakshaySK106/Blocking-Web-ETE" target="_blank" rel="noreferrer">
+                <img src={bwe} alt="okimage" />
               </a>
             </div>
 

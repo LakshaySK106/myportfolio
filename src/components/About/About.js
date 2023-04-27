@@ -40,7 +40,7 @@ function About() {
                </p>
                <div className="myCv">
                      <div className='rtext'>My Resume</div>
-                  <div className='okay'><a href="https://drive.google.com/file/d/1DSiOsbxgFbp8aQzw_JuYmNYrnzZCFsgC/view?usp=sharing" target="__blank">CLICK HERE TO VIEW PDF</a></div>
+                  <div className='okay'><a href="https://drive.google.com/file/d/1fHKgJ1wfQEkTLtRT3oMHFmemGbXnRBaM/view?usp=share_link" target="__blank">CLICK HERE TO VIEW PDF</a></div>
                </div>
             </div>
             

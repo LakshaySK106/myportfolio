@@ -14,12 +14,12 @@
       position: relative;
       top: auto;
       right: 15vw;
-      bottom: auto;
+      bottom: 10vh;
       left: 6vw;
       margin: auto;
       width: 30vw;
       opacity: 1;
-      transform: rotateZ(9deg) !important;
+      transform: rotateZ(0deg) !important;
       animation: fadeIn 1.3s 1.7s backwards;
    }
 }

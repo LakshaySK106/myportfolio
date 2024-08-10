@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+   height: 100vh;
+   margin: 0;
+   position: relative;
+}
+
 .page {
    width: 100%;
    height: 100%;
@@ -30,6 +38,7 @@
 }
 
 .container.skill-page {
+  
    .text-zone {
       position: absolute;
       left: 12.7vw;
@@ -121,3 +130,53 @@
       }
    }
 }
+
+.tagcloud {
+   font-family: sans-serif;
+   font-size: 16px;
+   margin: auto;
+   width: 50%;
+}
+.tagcloud--item {
+   color: #fff;
+}
+
+.tagcloud--item:hover {
+   color: #4e4a85;
+}
+
+ .content {
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
+   text-align: center;
+   width: 50%;
+   animation: fadeIn 1.3s 1s backwards;
+ }
+
+ .work-exp {
+    color: #4e4a85;
+    text-decoration: none;
+   font-weight: 500;
+
+    &:hover {
+       color: #fff;
+       cursor: pointer;
+    }
+
+    font-size: 16px;
+ }
+ .vertical-line {
+    width: 0.1px;
+    height: 46px;
+    margin: 6px;
+    background-color: #fff;
+ }
+ .exp-flex {
+   display: flex;
+   flex-direction: row;
+ }
+ .gs-found {
+   padding-top: 10px;
+ }

@@ -126,15 +126,10 @@
       }
    }
 }
-
-
-
-
-
 .fake-magicwall {
    background: #181818;
    float: right;
-   width: 45vw;
+   width: 52vw;
    height: 100vh;
    margin-top: -2.4%;
    display: grid;
@@ -142,13 +137,20 @@
    grid-template-columns: repeat(2, 1fr);
    row-gap: 0px;
    column-gap: 0px;
-   overflow: hidden;
+   overflow-y: auto;
+}
 
+.auto-scroll::-webkit-scrollbar {
+   display: none;
+}
+
+.auto-scroll {
+   scrollbar-width: none;
 }
 
 .magic-wall_item {
    position: relative;
-   opacity: 0.6;
+   opacity: 0.8;
    top: 0;
    left: 0;
    bottom: 0;
@@ -165,7 +167,7 @@
 
 .magic-wall_item:hover {
    transform: scale(1.14);
-   -ms-transform: scale(1.4);
+   -ms-transform: scale(1.14);
    -webkit-transform: scale(1.14);
    cursor: pointer;
    opacity: 1;

@@ -7,6 +7,8 @@ import { Outlet } from 'react-router-dom'
 function Skill() {
    const [letterClass, setLetterClass] = useState('text-animate')
 
+
+   
    useEffect(() => {
       setTimeout(() => {
          setLetterClass('text-animate-hover')

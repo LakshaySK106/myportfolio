@@ -1,5 +1,4 @@
 import { Outlet } from 'react-router-dom'
-import React from 'react'
 import { useEffect, useState } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'

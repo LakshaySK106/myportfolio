@@ -107,13 +107,18 @@ function Skill() {
             client and service side of the web).
             <br />
             <br />
-            - Over 5000 lines: C++, C, JavaScript
+            • Languages: C/C++, JavaScript, TypeScript, Java, SQL, Python,
+            HTML/CSS
             <br />
-            - Over 1000 lines: Python, HTML, CSS, TypeScript, Tailwind CSS
+            • Developer Tools: IntelliJ, VS Code, Git, Docker, Kubernetes,
+            Jenkins (CI/CD), JUnit, Linux, Google Cloud Platform
             <br />
-            - Web Development Libraries/Frameworks: React, AngularJS,
-            Express.js, Bootstrap, Node.js, MaterialUI
-            <br />- Familiar: MongoDB, MySQL, Sybase, Swagger, Rest Services
+            • Technologies/Frameworks: Angular, React, Node.js, Spring Boot,
+            Kafka, MongoDB, MySQL
+            <br />• Undergraduate Coursework: Data Structures, Operating
+            Systems, Algorithms Analysis, Database Management, Artificial
+            Intelligence, System Design, Distributed Systems, Computer
+            Architecture
           </p>
 
           <div className="timeline-container">

@@ -83,11 +83,24 @@ useEffect(() => {
               />
             </h1>
             <p>
-              Being an undergrad with Computer Science in major, I've worked on
-              multiple projects during my course based out of development / Web
-              Applications / Frontend / Backend. This is a fresh selection of my
-              latest projects!
+              I specialize in crafting full-stack applications that balance
+              elegant user experiences with strong backend engineering. With a
+              foundation in Computer Science and hands-on development
+              experience, I’ve built scalable web platforms, AI-integrated
+              systems, and performance-driven applications using modern
+              technologies and best engineering practices.
               <br />
+              <br />
+              Each project reflects my emphasis on clarity in design, efficiency
+              in execution, and real-world problem solving.
+              <br />
+              <br />
+              As a Computer Science graduate and Software Engineer, I've worked
+              on multiple projects during my course based out of development /
+              Web Applications / Frontend / Backend.
+              <br />
+              <br />
+              This is a fresh selection of my latest projects!
               <br />
               <a
                 href="https://github.com/LakshaySK106"

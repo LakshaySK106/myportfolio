@@ -1,5 +1,4 @@
 import './Sidebar.scss'
-import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import LogoN from '../../assets/images/logo-L.png'
 import LogoName from '../../assets/images/logo_namee.png'

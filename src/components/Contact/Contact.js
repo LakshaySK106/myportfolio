@@ -20,21 +20,21 @@ function Contact() {
       e.preventDefault()
 
       emailjs
-         .sendForm(
-            'service_email',
-            'template_sdo8do3',
-            form.current,
-            'Rbm-YZ3PzAWajutRA'
-         )
-         .then(
-            () => {
-               alert('Message successfully sent!')
-               window.location.reload(false)
-            },
-            () => {
-               alert('Failed to send the message, please try again')
-            }
-         )
+        .sendForm(
+          "service_email",
+          "template_sdo8do3",
+          form.current,
+          "Rbm-YZ3PzAWajutRA",
+        )
+        .then(
+          () => {
+            alert("Message successfully sent!");
+            window.location.reload(false);
+          },
+          () => {
+            alert("Failed to send the message, please try again");
+          },
+        );
    }
    return (
      <>

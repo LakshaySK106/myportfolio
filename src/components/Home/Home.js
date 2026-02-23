@@ -52,11 +52,36 @@ function Home() {
         <div className="container ">
           <div className="text-zone">
             <h1>
-              <span className={letterClass}>H</span>
-              <span className={`${letterClass} _12`}>i,</span>
+              <span
+                className={letterClass}
+                onMouseEnter={(e) => e.target.classList.add("rubberBand")}
+                onAnimationEnd={(e) => e.target.classList.remove("rubberBand")}
+              >
+                H
+              </span>
+              <span
+                className={`${letterClass} _12`}
+                onMouseEnter={(e) => e.target.classList.add("rubberBand")}
+                onAnimationEnd={(e) => e.target.classList.remove("rubberBand")}
+              >
+                i,
+              </span>
               <br />
-              <span className={`${letterClass} _13`}>I</span>
-              <span className={`${letterClass} _14`}>'m</span>
+              <span
+                className={`${letterClass} _13`}
+                onMouseEnter={(e) => e.target.classList.add("rubberBand")}
+                onAnimationEnd={(e) => e.target.classList.remove("rubberBand")}
+              >
+                I
+              </span>
+              <span
+                className={`${letterClass} _14`}
+                onMouseEnter={(e) => e.target.classList.add("rubberBand")}
+                onAnimationEnd={(e) => e.target.classList.remove("rubberBand")}
+              >
+                'm
+              </span>
+
               <img
                 src={logoName}
                 alt="developer"

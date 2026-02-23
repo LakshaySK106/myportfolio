@@ -74,7 +74,7 @@ function About() {
             <div className="rtext">My Resume</div>
             <div className="okay">
               <a
-                href="https://drive.google.com/file/d/1fHKgJ1wfQEkTLtRT3oMHFmemGbXnRBaM/view?usp=share_link"
+                href="https://drive.google.com/file/d/19tKR-tiolC44zpeHu_SdaBh3XRCM0WJv/view?usp=sharing"
                 target="__blank"
               >
                 CLICK HERE TO VIEW PDF

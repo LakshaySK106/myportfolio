@@ -1,12 +1,14 @@
 import logoName from "../../assets/images/logo-LLLL.png";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import Logo from "./Logo/Logo";
 import "./Home.scss";
 
 function Home() {
+  const [visitCount, setVisitCount] = useState(0);
   const [letterClass, setLetterClass] = useState("text-animate");
+  const hasFetched = useRef(false);
 
   const nameArray = ["a", "k", "s", "h", "a", "y,"];
   const jobArray = [
@@ -30,6 +32,16 @@ function Home() {
     setTimeout(() => {
       setLetterClass("text-animate-hover");
     }, 4000);
+
+  if (!hasFetched.current) {
+    fetch("https://api.counterapi.dev/v1/lakshay-portfolio-site/visits/up")
+      .then((response) => response.json())
+      .then((data) => setVisitCount(data.count))
+      .catch((error) => console.error("Error fetching visit count:", error));
+
+    hasFetched.current = true;
+}
+
   }, []);
 
   return (
@@ -70,6 +82,12 @@ function Home() {
             <Link to="/contact" className="flat-button">
               CONTACT ME!
             </Link>
+          </div>
+          <div className="visitor-counter">
+            <span className="counter-label">You are visitor #</span>
+            <span className="counter-number">
+              {visitCount > 0 ? visitCount : "..."}
+            </span>
           </div>
           <Logo />
         </div>

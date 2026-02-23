@@ -28,7 +28,7 @@
       &:before {
          content: '<h1>';
          font-family: 'La Belle Aurore', cursive;
-         color: #4e4a85;
+         color: #fff;
          font-size: 18px;
          position: absolute;
          margin-top: -40px;
@@ -39,7 +39,7 @@
       &:after {
          content: '<h1/>';
          font-family: 'La Belle Aurore', cursive;
-         color: #4e4a85;
+         color: #fff;
          font-size: 18px;
          position: absolute;
          margin-top: 25px;
@@ -51,7 +51,7 @@
          margin-left: 22px;
          margin-right: 4px;
          opacity: 0;
-         width: 45px;
+         width: 55px;
          height: auto;
          animation: rotateIn 0.4s linear both;
          animation-delay: 1.4s;

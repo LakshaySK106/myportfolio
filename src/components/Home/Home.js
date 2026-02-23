@@ -35,6 +35,8 @@ function Home() {
   return (
     <>
       <div className="home-page">
+        <span className="tags top-html">&lt;/html&gt;</span>
+        <span className="tags top-tags">&lt;body&gt;</span>
         <div className="container ">
           <div className="text-zone">
             <h1>
@@ -71,6 +73,11 @@ function Home() {
           </div>
           <Logo />
         </div>
+        <span className="tags bottom-tags">
+          &lt;/body&gt;
+          <br />
+          <span className="bottom-tag-html">&lt;/html&gt;</span>
+        </span>
       </div>
     </>
   );

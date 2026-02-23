@@ -1,16 +1,35 @@
-.logo-container {
-   right: 7%;
-   width: 40%; 
-   max-width: 450px;
+.profile-portrait {
    position: absolute;
-   top: 45%;
+   right: 10vw;
+   top: 50%;
    transform: translateY(-50%);
-   z-index: 1;
-   pointer-events: none;
+   width: 100%;
+   max-width: 400px;
+   aspect-ratio: 4/5;
+   object-fit: cover;
 
-   .solid-logo {
-      width: 100%;
-      height: auto;
-      display: block;
+   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   animation: morphBlob 8s ease-in-out infinite;
+
+   box-shadow: 0 0 40px rgba(78, 74, 133, 0.3);
+   transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   z-index: 1;
+
+
+   &:hover {
+      filter: brightness(110%);
+      box-shadow: 0 0 60px rgba(78, 74, 133, 0.8);
+      transform: translateY(-50%) scale(1.05);
+   }
+}
+@keyframes morphBlob {
+   0% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+   }
+   50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+   }
+   100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
    }
 }

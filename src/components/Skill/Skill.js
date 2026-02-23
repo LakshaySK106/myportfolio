@@ -203,8 +203,6 @@ function Skill() {
                   ></div>
                 </div>
               </div>
-
-              {/* --- AXIS --- */}
               <div className="timeline-axis">
                 <span className="axis-tick" style={{ left: "0%" }}>
                   2023
@@ -227,6 +225,7 @@ function Skill() {
         </div>
         <Outlet />
         <div ref={contentRef} className="content"></div>
+        <div className="scroll-hint">Scroll here to zoom in and zoom out</div>
         <span className="tags bottom-tags">
           &lt;/body&gt;
           <br />

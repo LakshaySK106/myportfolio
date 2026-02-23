@@ -50,9 +50,9 @@ function About() {
             intuitive, dynamic user experiences.
             <br />
             <br />
-            - Codeforces: Expert (1805) – lakshay_sk
+            - Codeforces: Expert (2018) – lakshay_sk
             <br />
-            - LeetCode: Guardian (2324, Top 0.48%) – lakshaysk
+            - LeetCode: Guardian (2461, Top 0.24%) – lakshaysk
             <br />
             - Winner of Morgan Stanley’s Code to Give Hackathon ’23 (1st out of
             14,000+)

@@ -9,16 +9,18 @@
 .top-tags {
    bottom: auto;
    top: 40px;
+   color: #fff;
 }
 
 .top-html {
    bottom: auto;
    top: 22px;
    margin-left: -20px;
+   color: #fff;
 }
 
 .tags {
-   color: #4e4a85;
+   color: #fff;
    opacity: 0.6;
    position: absolute;
    bottom: 0;
@@ -29,6 +31,7 @@
 
 .bottom-tag-html {
    margin-left: -20px;
+   color: #fff;
 }
 
 .container.about-page {
@@ -60,7 +63,7 @@
          &:before {
             content: '<h2>';
             font-family: 'La Belle Aurore', cursive;
-            color: #4e4a85;
+            color: #fff;
             font-size: 17px;
             position: absolute;
             top: 5px;
@@ -71,7 +74,7 @@
          &:after {
             content: '<h2/>';
             font-family: 'La Belle Aurore', cursive;
-            color: #4e4a85;
+            color: #fff;
             font-size: 18px;
             line-height: 18px;
             position: absolute;

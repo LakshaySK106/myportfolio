@@ -1,22 +1,25 @@
 .page {
    width: 100vw;
    height: 100vh;
-   position: absolute;
+   position: relative;      
+   overflow: hidden;
 }
 
 .top-tags {
    bottom: auto;
    top: 40px;
+   color: #fff;
 }
 
 .top-html {
    bottom: auto;
    top: 22px;
    margin-left: -20px;
+   color: #fff;
 }
 
 .tags {
-   color: #4e4a85;
+   color: #fff;
    opacity: 0.6;
    position: absolute;
    bottom: 0;
@@ -27,6 +30,7 @@
 
 .bottom-tag-html {
    margin-left: -20px;
+   color: #fff;
 }
 
 .container.contact-page {
@@ -41,7 +45,7 @@
       max-height: 90%;
 
       h1 {
-         font-size: 60px;
+         font-size: clamp(55px, 9vw, 95px);
          font-family: 'Coolvetica';
          color: #4e4a85;
          font-weight: 400;
@@ -53,23 +57,24 @@
          &:before {
             content: '<h2>';
             font-family: 'La Belle Aurore', cursive;
-            color: #4e4a85;
+            color: #fff;
             font-size: 18px;
             position: absolute;
             left: -10px;
             opacity: 0.6;
+            top: 20px;
             line-height: 18px;
          }
 
          &:after {
             content: '<h2/>';
             font-family: 'La Belle Aurore', cursive;
-            color: #4e4a85;
+            color: #fff;
             font-size: 18px;
             line-height: 18px;
             position: absolute;
             left: -30px;
-            bottom: -6px;
+            bottom: -1px;
             margin-left: 20px;
             opacity: 0.6;
          }
@@ -129,8 +134,8 @@
       &:before {
          content: '<form>';
          font-family: 'La Belle Aurore', cursive;
-         color: #4e4a85;
-         font-size: 15px;
+         color: #fff;
+         font-size: 18px;
          position: absolute;
          margin-top: -16px;
          left: -10px;
@@ -141,8 +146,8 @@
       &:after {
          content: '<form/>';
          font-family: 'La Belle Aurore', cursive;
-         color: #4e4a85;
-         font-size: 15px;
+         color: #fff;
+         font-size: 18px;
          line-height: 18px;
          position: absolute;
          left: -30px;
@@ -230,7 +235,6 @@
    float: right;
    width: 46vw;
    height: 100vh;
-   margin-top: -3%;
 }
 
 .leaflet-container {
@@ -245,7 +249,7 @@
 .info-map {
    position: absolute;
    background: #181818;
-   top: 1px;
+   top: 10px;
    right: 37vw;
    left: 57.4vw;
    z-index: 999999;
@@ -277,3 +281,6 @@
       filter: var(--map-tiles-filter, none);
    }
 }
+
+
+

@@ -53,11 +53,11 @@ const CursorCanvas = () => {
       () => new Point(mouse.x, mouse.y),
     );
 
+    const history = [];
+    const historyLength = 45; 
+
     const render = () => {
-      ctx.globalCompositeOperation = "destination-out";
-      ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
-      ctx.fillRect(0, 0, width, height);
-      ctx.globalCompositeOperation = "source-over";
+      ctx.clearRect(0, 0, width, height);
 
       points[0].x = mouse.x;
       points[0].y = mouse.y;
@@ -77,24 +77,38 @@ const CursorCanvas = () => {
         pt.x += pt.vx;
         pt.y += pt.vy;
       }
-      ctx.beginPath();
-      ctx.moveTo(points[0].x, points[0].y);
 
-      for (let i = 1; i < numPoints - 1; i++) {
-        const xc = (points[i].x + points[i + 1].x) / 2;
-        const yc = (points[i].y + points[i + 1].y) / 2;
-        ctx.quadraticCurveTo(points[i].x, points[i].y, xc, yc);
+      history.push(points.map((p) => ({ x: p.x, y: p.y })));
+      if (history.length > historyLength) {
+        history.shift(); 
       }
-      ctx.strokeStyle = "#4e4a85"; // #fd2155 The pinkish/red color from the example
-      ctx.lineWidth = 1.5;
-      ctx.lineCap = "round";
-      ctx.lineJoin = "round";
-      ctx.stroke();
+
+      history.forEach((framePoints, index) => {
+        ctx.beginPath();
+        ctx.moveTo(framePoints[0].x, framePoints[0].y);
+
+        for (let i = 1; i < numPoints - 1; i++) {
+          const xc = (framePoints[i].x + framePoints[i + 1].x) / 2;
+          const yc = (framePoints[i].y + framePoints[i + 1].y) / 2;
+          ctx.quadraticCurveTo(framePoints[i].x, framePoints[i].y, xc, yc);
+        }
+        const progress = index / history.length;
+
+        const opacity = Math.pow(progress, 2);
+
+        ctx.strokeStyle = `rgba(78, 74, 133, ${opacity})`;
+
+        ctx.lineWidth = 1.0 + progress * 1.5;
+        ctx.lineCap = "round";
+        ctx.lineJoin = "round";
+        ctx.stroke();
+      });
 
       animationFrameId = requestAnimationFrame(render);
     };
 
     render();
+
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("touchmove", handleTouchMove);

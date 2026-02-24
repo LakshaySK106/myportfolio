@@ -9,7 +9,7 @@ const Loader = () => {
             <img src={logoName} alt="developer" />
           
         </h1>
-        <p className="loader-text">Lakshay is thinking...</p>
+        <p className="loader-text">Lakshay is thinking....</p>
         <div className="progress-bar-container">
           <div className="progress-bar"></div>
         </div>

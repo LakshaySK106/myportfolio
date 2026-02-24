@@ -50,9 +50,9 @@ function About() {
             intuitive, dynamic user experiences.
             <br />
             <br />
-            • Codeforces: Expert (2018) – lakshay_sk
+            • Codeforces: Candidate Master (2018)
             <br />
-            • LeetCode: Guardian (2461, Top 0.24%) – lakshaysk
+            • LeetCode: Guardian (2464, Top 0.24%)
             <br />
             • Winner of Morgan Stanley’s Code to Give Hackathon ’23 (1st out of
             14,000+)
@@ -74,7 +74,7 @@ function About() {
             <div className="rtext">My Resume</div>
             <div className="okay">
               <a
-                href="https://drive.google.com/file/d/19tKR-tiolC44zpeHu_SdaBh3XRCM0WJv/view?usp=sharing"
+                href="https://drive.google.com/file/d/1vYfh9XeUO59pSxLsQChCvRtAL1cEsaY2/view?usp=sharing"
                 target="__blank"
               >
                 CLICK HERE TO VIEW PDF

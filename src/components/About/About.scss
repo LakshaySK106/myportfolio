@@ -196,7 +196,7 @@
    font-weight: 400;
    font-size: 4vw;
    letter-spacing: 2px;
-   margin-bottom: 60px;
+   margin-bottom: 10px;
    z-index: 2;
    position: relative;
 
@@ -212,6 +212,17 @@
       text-transform: lowercase;
       letter-spacing: normal;
    }
+}
+
+.rrtext {
+   font-family: 'Coolvetica';
+   color: #4e4a85;
+   font-weight: 400;
+   font-size: 4vw;
+   letter-spacing: 2px;
+   margin-bottom: 60px;
+   z-index: 2;
+   position: relative;
 
    &:after {
       content: '</resume>';

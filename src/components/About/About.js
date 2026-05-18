@@ -72,11 +72,9 @@ function About() {
           </p>
           <div className="myCv">
             <div className="rtext">My Resume</div>
+            <div className="rrtext">Template</div>
             <div className="okay">
-              <a
-                href="https://drive.google.com/file/d/1vYfh9XeUO59pSxLsQChCvRtAL1cEsaY2/view?usp=sharing"
-                target="__blank"
-              >
+              <a href="https://topmate.io/lakshaysk" target="__blank">
                 CLICK HERE TO VIEW PDF
               </a>
             </div>

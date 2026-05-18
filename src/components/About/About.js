@@ -75,7 +75,7 @@ function About() {
             <div className="rrtext">Template</div>
             <div className="okay">
               <a href="https://topmate.io/lakshaysk" target="__blank">
-                CLICK HERE TO VIEW PDF
+                CLICK HERE TO VIEW
               </a>
             </div>
           </div>

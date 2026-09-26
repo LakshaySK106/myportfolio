@@ -42,7 +42,7 @@ function About() {
             />
           </h1>
           <p>
-            I’m a Full Stack Software Engineer at Morgan Stanley, a Computer
+            I’m a Software Engineer at Rippling; Ex-Morgan Stanley, a Computer
             Science graduate from Delhi Technological University (CGPA 8.77/10),
             and a Competitive Programmer with a passion for building scalable
             systems located in Bangalore, Karnataka, India. I’ve a serious

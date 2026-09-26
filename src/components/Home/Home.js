@@ -12,11 +12,16 @@ function Home() {
 
   const nameArray = ["a", "k", "s", "h", "a", "y,"];
   const jobArray = [
+    "S",
+    "o",
+    "f",
+    "t",
     "w",
+    "a",
+    "r",
     "e",
-    "b",
     " ",
-    "d",
+    "D",
     "e",
     "v",
     "e",
@@ -101,8 +106,8 @@ function Home() {
               />
             </h1>
             <h2>
-              Software Engineer at Morgan Stanley | Web Designer | Broke
-              Audiophile
+              Software Engineer at Rippling | Ex-Morgan Stanley | Delhi
+              Technological University
             </h2>
             <Link to="/contact" className="flat-button">
               CONTACT ME!

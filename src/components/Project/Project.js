@@ -95,7 +95,7 @@ useEffect(() => {
               in execution, and real-world problem solving.
               <br />
               <br />
-              As a Computer Science graduate and Software Engineer, I've worked
+              As a Software Engineer and Computer Science graduate, I've worked
               on multiple projects during my course based out of development /
               Web Applications / Frontend / Backend.
               <br />

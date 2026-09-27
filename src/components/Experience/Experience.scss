@@ -1,75 +1,84 @@
 /* =========================================================
-   EXPERIENCE PAGE (STRICT ACCORDION CONTAINER)
+   EXPERIENCE PAGE (FLEXBOX DYNAMIC BOTTOM DOCKING)
 ========================================================= */
 
 .experience-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 100%;
     min-height: 100vh;
     position: relative;
     box-sizing: border-box;
-    padding-left: 150px;
-    padding-right: 45px;
+    padding-left: 260px;
+    /* Left content offset */
+    padding-right: 60px;
     padding-top: 1px;
-    padding-bottom: 80px;
+    padding-bottom: 25px;
     background: #181818;
     overflow-x: hidden;
     overflow-y: auto;
     color: #fff;
 
     /* =======================================================
-     SCOPED DECORATIVE HTML TAGS
+     SCOPED TAGS (TOP AND BOTTOM)
   ======================================================== */
 
     .experience-tag {
-        position: absolute;
-        color: #4e4a85;
+        color: #fff;
         opacity: 0.6;
         font-family: 'La Belle Aurore', cursive;
         font-size: 18px;
         line-height: 1;
         pointer-events: none;
-        z-index: 1;
 
         &.experience-top-html {
+            position: absolute;
             top: 22px;
-            left: 130px;
+            left: 180px;
+            z-index: 1;
         }
 
         &.experience-top-body {
+            position: absolute;
             top: 40px;
-            left: 150px;
+            left: 200px;
+            z-index: 1;
         }
 
+        /* Standard Flex item: Pushed to bottom of screen when collapsed, moves down when expanded */
         &.experience-bottom-tags {
             position: relative;
-            display: block;
-            left: auto;
-            top: auto;
-            margin-top: 50px;
-            padding-bottom: 20px;
+            margin-top: auto;
+            padding-top: 40px;
+            left: -20px;
+            /* Aligns </body> with left: 200px */
+            clear: both;
 
             .experience-bottom-html {
-                display: inline-block;
+                display: block;
                 margin-top: 8px;
+                margin-left: -20px;
+                /* Aligns </html> with left: 180px */
             }
         }
     }
 
     /* =======================================================
-     MAIN CONTAINER
+     MAIN CONTENT ZONE
   ======================================================== */
 
     .experience-content {
         width: 100%;
-        max-width: 1100px;
-        margin: 0 auto;
-        padding-top: 115px;
+        max-width: 78vw;
+        margin: 0;
+        padding-top: 100px;
         box-sizing: border-box;
         text-align: left;
     }
 
     /* =======================================================
-     TITLE
+     TITLE SECTION
   ======================================================== */
 
     .experience-title {
@@ -80,13 +89,13 @@
         padding: 0;
         color: #4e4a85;
         font-family: 'Coolvetica', sans-serif;
-        font-size: clamp(55px, 7vw, 85px);
+        font-size: clamp(55px, 8vw, 95px);
         font-weight: 400;
         line-height: 0.9;
         text-align: left;
 
         &::before {
-            content: '<h1>';
+            content: '<h2>';
             position: absolute;
             top: -28px;
             left: -10px;
@@ -98,7 +107,7 @@
         }
 
         &::after {
-            content: '<h1/>';
+            content: '<h2/>';
             position: absolute;
             bottom: -30px;
             left: -10px;
@@ -126,32 +135,33 @@
         width: 100%;
     }
 
-    /* Individual Interactive Card */
     .experience-entry {
         position: relative !important;
         display: block !important;
         width: 100%;
         height: auto !important;
-        background: rgba(255, 255, 255, 0.025);
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 10px;
-        padding: 24px 28px;
+        background: rgba(24, 24, 24, 0.4);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(78, 74, 133, 0.2);
+        border-radius: 8px;
+        padding: 24px 32px;
         box-sizing: border-box;
         cursor: pointer;
-        transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+        transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 
         &:hover {
-            background: rgba(255, 255, 255, 0.05);
-            border-color: rgba(255, 255, 255, 0.2);
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(78, 74, 133, 0.5);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
             transform: translateY(-2px);
         }
 
         &.expanded {
-            background: rgba(255, 255, 255, 0.04);
-            border-color: rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.03);
+            border-color: rgba(78, 74, 133, 0.4);
         }
 
-        /* Left Color Accents */
+        /* Left Accent Stripes */
         &.rippling-card {
             border-left: 4px solid #fee440;
         }
@@ -180,8 +190,8 @@
         h2 {
             margin: 0;
             font-family: 'Coolvetica', sans-serif;
-            font-size: 25px;
-            font-weight: 600;
+            font-size: 26px;
+            font-weight: 400;
             color: #ffffff;
             letter-spacing: 0.5px;
         }
@@ -223,15 +233,12 @@
 
         .chevron-icon {
             font-size: 11px;
-            color: #8278dc;
+            color: #4e4a85;
             padding-left: 8px;
         }
     }
 
-    /* =======================================================
-     EXPANDED CONTENT & STRICT POSITIONAL RESETS
-  ======================================================== */
-
+    /* Expanded Body */
     .experience-body {
         position: relative !important;
         top: auto !important;
@@ -247,7 +254,6 @@
         animation: fadeIn 0.3s ease-in-out;
     }
 
-    /* Override any global ul / li rules leaking from templates */
     .experience-bullets {
         position: relative !important;
         top: auto !important;
@@ -286,7 +292,7 @@
                 position: absolute;
                 left: 0;
                 top: 0;
-                color: #8278dc;
+                color: #4e4a85;
                 font-size: 16px;
                 line-height: 1.6;
             }
@@ -308,6 +314,22 @@
     /* =======================================================
      RESPONSIVE BREAKPOINTS
   ======================================================== */
+
+    @media screen and (max-width: 1200px) {
+        padding-left: 170px;
+
+        .experience-tag.experience-top-html {
+            left: 130px;
+        }
+
+        .experience-tag.experience-top-body {
+            left: 150px;
+        }
+
+        .experience-content {
+            max-width: 100%;
+        }
+    }
 
     @media screen and (max-width: 900px) {
         padding-left: 110px;
@@ -339,11 +361,11 @@
         padding-right: 15px;
 
         .experience-tag.experience-top-html {
-            left: 80px;
+            left: 70px;
         }
 
         .experience-tag.experience-top-body {
-            left: 95px;
+            left: 90px;
         }
 
         .experience-title {

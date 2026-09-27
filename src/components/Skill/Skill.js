@@ -156,12 +156,9 @@ function Skill() {
               strArray={["S", "k", "i", "l", "l", "s", " ", "&"]}
               idx={15}
             />
-
-            <br />
-
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={["E", "x", "p", "e", "r", "i", "e", "n", "c", "e"]}
+              strArray={["T", "i", "m", "e", "l", "i", "n", "e"]}
               idx={22}
             />
           </h1>

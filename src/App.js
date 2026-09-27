@@ -37,7 +37,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/skill" element={<Skill />} />
-        <Route path="/skill" element={<Experience />} />
+        <Route path="/experience" element={<Experience />} />
         <Route path="/project" element={<Project />} />
       </Routes>
     </>

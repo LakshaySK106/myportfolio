@@ -2,9 +2,15 @@ import './Sidebar.scss'
 import { Link, NavLink } from 'react-router-dom'
 import LogoN from '../../assets/images/logo-L.png'
 import LogoName from '../../assets/images/logo_namee.png'
-import WebD from '../../assets/images/logo_web.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUserAstronaut, faContactCard, faComputer, faProjectDiagram} from '@fortawesome/free-solid-svg-icons'
+import {
+  faHome,
+  faUserAstronaut,
+  faContactCard,
+  faComputer,
+  faProjectDiagram,
+  faBriefcase,
+} from "@fortawesome/free-solid-svg-icons";
 import {
    faLinkedin,
    faGithub,
@@ -18,7 +24,7 @@ function Sidebar() {
        <Link className="logo" to="/">
          <img src={LogoN} alt="Logo" />
          <img className="sub-logo" src={LogoName} alt="Lakshay" />
-         <span className="sub-logo-tag" >Software Engineer</span>
+         <span className="sub-logo-tag">Software Engineer</span>
        </Link>
        <nav>
          <div className="nav-item">
@@ -36,6 +42,16 @@ function Sidebar() {
          <div className="nav-item">
            <NavLink activeclassname="active" className="skill-link" to="/skill">
              <FontAwesomeIcon icon={faComputer} color="#4d4d4e" />
+           </NavLink>
+           <div className="horizontal-line" />
+         </div>
+         <div className="nav-item">
+           <NavLink
+             activeclassname="active"
+             className="experience-link"
+             to="/experience"
+           >
+             <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
            </NavLink>
            <div className="horizontal-line" />
          </div>

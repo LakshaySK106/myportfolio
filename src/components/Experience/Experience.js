@@ -7,8 +7,8 @@ const experiencesData = [
     id: "rippling",
     company: "Rippling",
     role: "Software Engineer - AI Platforms and Infrastructure",
-    date: "Apr 2026 – Present",
-    location: "Bangalore, India",
+    date: "Apr 2026 – Present |",
+    location: "📍 Bangalore, India",
     cardClass: "rippling-card",
     bullets: [
       "Built Sandbox Scheduled Refreshes, enabling customers to schedule one-time or recurring sandbox refreshes with cooldown behavior, pause/edit flows, and automatic cleanup of consumed one-time schedules.",
@@ -23,8 +23,8 @@ const experiencesData = [
     id: "morgan-stanley-se",
     company: "Morgan Stanley",
     role: "Software Engineer - Distributed Systems",
-    date: "Aug 2024 – Feb 2026",
-    location: "Bangalore, India",
+    date: "Aug 2024 – Feb 2026 |",
+    location: "📍 Bangalore, India",
     cardClass: "ms-card",
     bullets: [
       "Developed a distributed KYC onboarding platform using a microservices architecture (Spring Boot/Angular), reducing manual verification by 40% via a decision-tree UI.",
@@ -36,8 +36,8 @@ const experiencesData = [
     id: "morgan-stanley-intern",
     company: "Morgan Stanley",
     role: "Software Engineer Intern",
-    date: "Jan 2024 – Jul 2024",
-    location: "Bangalore, India",
+    date: "Jan 2024 – Jul 2024 |",
+    location: "📍 Bangalore, India",
     cardClass: "ms-intern-card",
     bullets: [
       "Built a scalable data quality framework that gathers metadata from multiple data sources and identifies discrepancies in 30 million+ Client/Contact records, reducing manual reconciliation by 45%.",

@@ -110,6 +110,12 @@ nav {
       }
    }
 
+   a.experience-link {
+      &:after {
+         content: 'MY EXP';
+      }
+   }
+
    a.project-link {
       &:after {
          content: 'MY WORK';

@@ -1,5 +1,5 @@
 /* =========================================================
-   EXPERIENCE PAGE (FLEXBOX DYNAMIC BOTTOM DOCKING)
+   EXPERIENCE PAGE (CLEAN TEXT & FLAT DATES)
 ========================================================= */
 
 .experience-page {
@@ -11,7 +11,6 @@
     position: relative;
     box-sizing: border-box;
     padding-left: 260px;
-    /* Left content offset */
     padding-right: 60px;
     padding-top: 1px;
     padding-bottom: 25px;
@@ -46,20 +45,17 @@
             z-index: 1;
         }
 
-        /* Standard Flex item: Pushed to bottom of screen when collapsed, moves down when expanded */
         &.experience-bottom-tags {
             position: relative;
             margin-top: auto;
             padding-top: 40px;
             left: -20px;
-            /* Aligns </body> with left: 200px */
             clear: both;
 
             .experience-bottom-html {
                 display: block;
                 margin-top: 8px;
                 margin-left: -20px;
-                /* Aligns </html> with left: 180px */
             }
         }
     }
@@ -161,7 +157,7 @@
             border-color: rgba(78, 74, 133, 0.4);
         }
 
-        /* Left Accent Stripes */
+        /* Accent Left Borders */
         &.rippling-card {
             border-left: 4px solid #fee440;
         }
@@ -182,10 +178,12 @@
         align-items: center;
         width: 100%;
         user-select: none;
+        text-align: left;
     }
 
     .experience-company-block {
         flex: 1 1 auto;
+        text-align: left;
 
         h2 {
             margin: 0;
@@ -194,39 +192,44 @@
             font-weight: 400;
             color: #ffffff;
             letter-spacing: 0.5px;
+            text-align: left;
         }
 
+        /* Designation styling matching location */
         h3 {
             margin: 4px 0 0 0;
             font-family: Georgia, 'Times New Roman', serif;
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 400;
-            font-style: italic;
-            color: #a8b2d1;
+            font-style: normal;
+            color: #8d8d8d;
+            text-align: left;
         }
     }
 
     .experience-meta {
         display: flex;
         align-items: center;
-        gap: 16px;
+        gap: 4px;
 
+        /* Plain text date styling (border/badge removed) */
         .date-badge {
-            font-family: sans-serif;
-            font-size: 13px;
-            font-weight: 600;
-            color: #ffffff;
-            background: rgba(255, 255, 255, 0.08);
-            padding: 6px 14px;
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.12);
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 14px;
+            font-weight: 400;
+            color: #8d8d8d;
+            background: transparent;
+            padding: 0;
+            border: none;
+            border-radius: 0;
             white-space: nowrap;
         }
 
+        /* Plain text location (italics removed) */
         .location {
             font-family: Georgia, 'Times New Roman', serif;
             font-size: 14px;
-            font-style: italic;
+            font-style: normal;
             color: #8d8d8d;
             white-space: nowrap;
         }
@@ -238,7 +241,7 @@
         }
     }
 
-    /* Expanded Body */
+    /* Expanded Body Section */
     .experience-body {
         position: relative !important;
         top: auto !important;
@@ -252,6 +255,7 @@
         padding-top: 20px;
         border-top: 1px solid rgba(255, 255, 255, 0.08);
         animation: fadeIn 0.3s ease-in-out;
+        text-align: left !important;
     }
 
     .experience-bullets {
@@ -266,6 +270,7 @@
         margin: 0 !important;
         padding: 0 !important;
         list-style: none !important;
+        text-align: left !important;
 
         li {
             position: relative !important;
@@ -282,6 +287,7 @@
             font-size: 15px;
             line-height: 1.6;
             color: #e2e8f0;
+            text-align: left !important;
 
             &:last-child {
                 margin-bottom: 0 !important;

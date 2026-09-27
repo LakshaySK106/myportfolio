@@ -10,6 +10,7 @@ import Project from "./components/Project/Project";
 import Main from "./components/Main/Main";
 import Contact from "./components/Contact/Contact";
 import Loader from "./components/Loader/Loader"; 
+import Experience from "./components/Experience/Experience"; 
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -36,6 +37,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/skill" element={<Skill />} />
+        <Route path="/skill" element={<Experience />} />
         <Route path="/project" element={<Project />} />
       </Routes>
     </>

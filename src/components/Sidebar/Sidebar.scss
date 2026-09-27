@@ -10,6 +10,7 @@
    .logo {
       display: block;
       padding: 8px 0;
+      text-decoration: none;
 
       img {
          display: block;
@@ -25,6 +26,18 @@
             margin-top: 15px;
             width: 80px;
          }
+      }
+      .sub-logo-tag {
+         display: block;
+         width: 100%;
+         text-align: center;
+         color: #fff;
+         font-family: Georgia, 'Times New Roman', serif;
+         font-size: 11px;
+         font-weight: 300;
+         line-height: 22px;
+         margin-top: -2px;
+         white-space: nowrap;
       }
    }
 }

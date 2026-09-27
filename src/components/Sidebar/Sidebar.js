@@ -18,6 +18,7 @@ function Sidebar() {
        <Link className="logo" to="/">
          <img src={LogoN} alt="Logo" />
          <img className="sub-logo" src={LogoName} alt="Lakshay" />
+         <span className="sub-logo-tag" >Software Engineer</span>
        </Link>
        <nav>
          <div className="nav-item">

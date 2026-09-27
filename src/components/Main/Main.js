@@ -5,6 +5,7 @@ import "./Main.scss";
 import Skill from "../Skill/Skill";
 import Project from "../Project/Project";
 import Contact from "../Contact/Contact";
+import Experience from "../Experience/Experience";
 
 function Main() {
   const [showIndicator, setShowIndicator] = useState(true);
@@ -41,6 +42,7 @@ function Main() {
         <Home />
         <About />
         <Skill />
+        <Experience />
         <Project />
         <Contact />
       </div>

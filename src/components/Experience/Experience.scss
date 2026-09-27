@@ -1,0 +1,353 @@
+/* =========================================================
+   EXPERIENCE PAGE (STRICT ACCORDION CONTAINER)
+========================================================= */
+
+.experience-page {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 150px;
+    padding-right: 45px;
+    padding-top: 1px;
+    padding-bottom: 80px;
+    background: #181818;
+    overflow-x: hidden;
+    overflow-y: auto;
+    color: #fff;
+
+    /* =======================================================
+     SCOPED DECORATIVE HTML TAGS
+  ======================================================== */
+
+    .experience-tag {
+        position: absolute;
+        color: #4e4a85;
+        opacity: 0.6;
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 18px;
+        line-height: 1;
+        pointer-events: none;
+        z-index: 1;
+
+        &.experience-top-html {
+            top: 22px;
+            left: 130px;
+        }
+
+        &.experience-top-body {
+            top: 40px;
+            left: 150px;
+        }
+
+        &.experience-bottom-tags {
+            position: relative;
+            display: block;
+            left: auto;
+            top: auto;
+            margin-top: 50px;
+            padding-bottom: 20px;
+
+            .experience-bottom-html {
+                display: inline-block;
+                margin-top: 8px;
+            }
+        }
+    }
+
+    /* =======================================================
+     MAIN CONTAINER
+  ======================================================== */
+
+    .experience-content {
+        width: 100%;
+        max-width: 1100px;
+        margin: 0 auto;
+        padding-top: 115px;
+        box-sizing: border-box;
+        text-align: left;
+    }
+
+    /* =======================================================
+     TITLE
+  ======================================================== */
+
+    .experience-title {
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 0 0 45px 0;
+        padding: 0;
+        color: #4e4a85;
+        font-family: 'Coolvetica', sans-serif;
+        font-size: clamp(55px, 7vw, 85px);
+        font-weight: 400;
+        line-height: 0.9;
+        text-align: left;
+
+        &::before {
+            content: '<h1>';
+            position: absolute;
+            top: -28px;
+            left: -10px;
+            color: #fff;
+            opacity: 0.6;
+            font-family: 'La Belle Aurore', cursive;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        &::after {
+            content: '<h1/>';
+            position: absolute;
+            bottom: -30px;
+            left: -10px;
+            color: #fff;
+            opacity: 0.6;
+            font-family: 'La Belle Aurore', cursive;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        span:hover {
+            color: #fff !important;
+            cursor: default;
+        }
+    }
+
+    /* =======================================================
+     ACCORDION CARDS LIST
+  ======================================================== */
+
+    .experience-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    /* Individual Interactive Card */
+    .experience-entry {
+        position: relative !important;
+        display: block !important;
+        width: 100%;
+        height: auto !important;
+        background: rgba(255, 255, 255, 0.025);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 10px;
+        padding: 24px 28px;
+        box-sizing: border-box;
+        cursor: pointer;
+        transition: background 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        &.expanded {
+            background: rgba(255, 255, 255, 0.04);
+            border-color: rgba(255, 255, 255, 0.18);
+        }
+
+        /* Left Color Accents */
+        &.rippling-card {
+            border-left: 4px solid #fee440;
+        }
+
+        &.ms-card {
+            border-left: 4px solid #9b5de5;
+        }
+
+        &.ms-intern-card {
+            border-left: 4px solid #00d2b5;
+        }
+    }
+
+    /* Header Section */
+    .experience-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        user-select: none;
+    }
+
+    .experience-company-block {
+        flex: 1 1 auto;
+
+        h2 {
+            margin: 0;
+            font-family: 'Coolvetica', sans-serif;
+            font-size: 25px;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            margin: 4px 0 0 0;
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+            color: #a8b2d1;
+        }
+    }
+
+    .experience-meta {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        .date-badge {
+            font-family: sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 6px 14px;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            white-space: nowrap;
+        }
+
+        .location {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 14px;
+            font-style: italic;
+            color: #8d8d8d;
+            white-space: nowrap;
+        }
+
+        .chevron-icon {
+            font-size: 11px;
+            color: #8278dc;
+            padding-left: 8px;
+        }
+    }
+
+    /* =======================================================
+     EXPANDED CONTENT & STRICT POSITIONAL RESETS
+  ======================================================== */
+
+    .experience-body {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        display: block !important;
+        width: 100% !important;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    /* Override any global ul / li rules leaking from templates */
+    .experience-bullets {
+        position: relative !important;
+        top: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+        right: auto !important;
+        transform: none !important;
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+
+        li {
+            position: relative !important;
+            top: auto !important;
+            bottom: auto !important;
+            left: auto !important;
+            right: auto !important;
+            transform: none !important;
+            display: block !important;
+            width: auto !important;
+            padding-left: 22px;
+            margin-bottom: 12px !important;
+            font-family: sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            color: #e2e8f0;
+
+            &:last-child {
+                margin-bottom: 0 !important;
+            }
+
+            &::before {
+                content: "▹";
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: #8278dc;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-4px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* =======================================================
+     RESPONSIVE BREAKPOINTS
+  ======================================================== */
+
+    @media screen and (max-width: 900px) {
+        padding-left: 110px;
+        padding-right: 25px;
+
+        .experience-entry {
+            padding: 20px;
+        }
+
+        .experience-header {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .experience-meta {
+            flex-wrap: wrap;
+            gap: 10px;
+
+            .date-badge,
+            .location {
+                white-space: normal;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        padding-left: 90px;
+        padding-right: 15px;
+
+        .experience-tag.experience-top-html {
+            left: 80px;
+        }
+
+        .experience-tag.experience-top-body {
+            left: 95px;
+        }
+
+        .experience-title {
+            font-size: 48px;
+        }
+    }
+}

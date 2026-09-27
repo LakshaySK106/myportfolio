@@ -1,6 +1,7 @@
 import logoName from "../../assets/images/logo-LLLL.png";
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import { Counter } from "counterapi";
 import AnimatedLetters from "../AnimatedLetters/AnimatedLetters";
 import Logo from "./Logo/Logo";
 import "./Home.scss";
@@ -11,6 +12,7 @@ function Home() {
   const hasFetched = useRef(false);
 
   const nameArray = ["a", "k", "s", "h", "a", "y,"];
+
   const jobArray = [
     "S",
     "o",
@@ -34,27 +36,56 @@ function Home() {
   ];
 
   useEffect(() => {
-    setTimeout(() => {
+    const timer = setTimeout(() => {
       setLetterClass("text-animate-hover");
     }, 4000);
 
-  if (!hasFetched.current) {
-    fetch("https://api.counterapi.dev/v1/lakshay-portfolio-site/visits/up")
-      .then((response) => response.json())
-      .then((data) => setVisitCount(data.count))
-      .catch((error) => console.error("Error fetching visit count:", error));
+    const getVisitorCount = async () => {
+      try {
+        const counter = new Counter({
+          workspace: "lakshays-team-5704",
+          debug: true,
+        });
 
-    hasFetched.current = true;
-}
+        // Increment the visitor counter
+        const incrementResult = await counter.up("first-counter-5704");
 
+        console.log("COUNTER INCREMENT:", incrementResult);
+
+        // Fetch the current counter value
+        const result = await counter.get("first-counter-5704");
+
+        console.log("CURRENT COUNTER:", result);
+
+        const count =
+          result?.value ?? result?.data?.up_count ?? result?.data?.value;
+
+        if (typeof count === "number") {
+          setVisitCount(count);
+        } else {
+          console.error("Unable to determine visitor count:", result);
+        }
+      } catch (error) {
+        console.error("COUNTER API ERROR:", error);
+      }
+    };
+
+    if (!hasFetched.current) {
+      hasFetched.current = true;
+      getVisitorCount();
+    }
+
+    return () => clearTimeout(timer);
   }, []);
 
   return (
     <>
       <div className="home-page">
         <span className="tags top-html">&lt;/html&gt;</span>
+
         <span className="tags top-tags">&lt;body&gt;</span>
-        <div className="container ">
+
+        <div className="container">
           <div className="text-zone">
             <h1>
               <span
@@ -64,6 +95,7 @@ function Home() {
               >
                 H
               </span>
+
               <span
                 className={`${letterClass} _12`}
                 onMouseEnter={(e) => e.target.classList.add("rubberBand")}
@@ -71,7 +103,9 @@ function Home() {
               >
                 i,
               </span>
+
               <br />
+
               <span
                 className={`${letterClass} _13`}
                 onMouseEnter={(e) => e.target.classList.add("rubberBand")}
@@ -79,6 +113,7 @@ function Home() {
               >
                 I
               </span>
+
               <span
                 className={`${letterClass} _14`}
                 onMouseEnter={(e) => e.target.classList.add("rubberBand")}
@@ -93,34 +128,43 @@ function Home() {
                 onMouseEnter={(e) => e.target.classList.add("rubberBand")}
                 onAnimationEnd={(e) => e.target.classList.remove("rubberBand")}
               />
+
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={nameArray}
                 idx={15}
               />
+
               <br />
+
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={jobArray}
                 idx={17}
               />
             </h1>
+
             <h2>
               Software Engineer at Rippling | Ex-Morgan Stanley | Delhi
               Technological University
             </h2>
+
             <Link to="/contact" className="flat-button">
               CONTACT ME!
             </Link>
           </div>
+
           <div className="visitor-counter">
             <span className="counter-label">You are visitor #</span>
+
             <span className="counter-number">
               {visitCount > 0 ? visitCount : "..."}
             </span>
           </div>
+
           <Logo />
         </div>
+
         <span className="tags bottom-tags">
           &lt;/body&gt;
           <br />

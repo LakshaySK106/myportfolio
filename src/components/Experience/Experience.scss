@@ -15,8 +15,11 @@
     padding-top: 1px;
     padding-bottom: 25px;
     background: transparent;
-    overflow-x: hidden;
+    height: 100vh;
+    /* Explicit fixed height required for internal overflow */
     overflow-y: auto;
+    /* Enables vertical scrolling inside this container */
+    overflow-x: hidden;
     color: #fff;
 
     /* =======================================================

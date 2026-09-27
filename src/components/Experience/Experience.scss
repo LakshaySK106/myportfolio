@@ -1,5 +1,5 @@
 /* =========================================================
-   EXPERIENCE PAGE (CLEAN TEXT & FLAT DATES)
+   EXPERIENCE PAGE (FIXED SCROLL, BACKGROUND & CURSOR TRAIL)
 ========================================================= */
 
 .experience-page {
@@ -14,7 +14,7 @@
     padding-right: 60px;
     padding-top: 1px;
     padding-bottom: 25px;
-    background: #181818;
+    background: transparent;
     overflow-x: hidden;
     overflow-y: auto;
     color: #fff;
@@ -195,7 +195,6 @@
             text-align: left;
         }
 
-        /* Designation styling matching location */
         h3 {
             margin: 4px 0 0 0;
             font-family: Georgia, 'Times New Roman', serif;
@@ -210,9 +209,8 @@
     .experience-meta {
         display: flex;
         align-items: center;
-        gap: 4px;
+        gap: 8px;
 
-        /* Plain text date styling (border/badge removed) */
         .date-badge {
             font-family: Georgia, 'Times New Roman', serif;
             font-size: 14px;
@@ -225,7 +223,6 @@
             white-space: nowrap;
         }
 
-        /* Plain text location (italics removed) */
         .location {
             font-family: Georgia, 'Times New Roman', serif;
             font-size: 14px;
@@ -237,7 +234,7 @@
         .chevron-icon {
             font-size: 11px;
             color: #4e4a85;
-            padding-left: 8px;
+            padding-left: 4px;
         }
     }
 

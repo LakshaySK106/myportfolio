@@ -102,7 +102,7 @@ function Home() {
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={jobArray}
-                idx={22}
+                idx={17}
               />
             </h1>
             <h2>
